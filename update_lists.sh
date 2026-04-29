@@ -35,6 +35,7 @@ https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts \
 https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts \
 https://raw.githubusercontent.com/tiuxo/hosts/master/ads \
 https://adguardteam.github.io/AdguardFilters/BaseFilter/sections/adservers.txt \
+https://raw.githubusercontent.com/bigdargon/hostsVN/refs/heads/master/hosts \
 | extract_domains > "$BLOCK_TMP"
 
 echo "Downloading and processing allowlists..."
