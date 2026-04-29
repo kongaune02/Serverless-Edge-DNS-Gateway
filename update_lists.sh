@@ -31,11 +31,10 @@ extract_domains() {
 
 echo "Downloading and processing blocklists..."
 curl -fsSL --max-time 60 \
-https://adguardteam.github.io/HostlistsRegistry/assets/filter_16.txt \
-https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt \
-https://raw.githubusercontent.com/bibicadotnet/AdGuard-Home-blocklists/refs/heads/main/byme.txt \
-https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts \
-https://badmojr.github.io/1Hosts/Lite/adblock.txt \
+https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts \
+https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts \
+https://raw.githubusercontent.com/tiuxo/hosts/master/ads \
+https://adguardteam.github.io/AdguardFilters/BaseFilter/sections/adservers.txt \
 | extract_domains > "$BLOCK_TMP"
 
 echo "Downloading and processing allowlists..."
