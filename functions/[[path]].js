@@ -1,6 +1,6 @@
 // ==================== CONFIG ====================
 const UPSTREAM_PRIMARY = 'https://dns-54q.pages.dev/dns-query';
-const UPSTREAM_FALLBACK = 'h3://doh.bibica.net/dns-query';
+const UPSTREAM_FALLBACK = 'https://doh.bibica.net/dns-query';
 const UPSTREAM_GEO_BYPASS = 'https://dns.mullvad.net/dns-query'; // Re-resolve without ECS when geo-block returns loopback
 const UPSTREAM_TIMEOUT = 5000;
 
